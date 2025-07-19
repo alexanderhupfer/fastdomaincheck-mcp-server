@@ -2,8 +2,6 @@
 
 Find Free Domains in a Breeze - A Model Context Protocol (MCP) server for bulk domain name registration status checking.
 
-## Demonstration
-
 The screenshots below show the FastDomainCheck MCP Server in action with Claude Code:
 
 ### Screen 1: Domain Checking Request
@@ -21,85 +19,31 @@ The screenshots below show the FastDomainCheck MCP Server in action with Claude 
 - Built-in health check endpoint
 - Simple JSON output format
 
-## Installation
+## Installation & Usage
 
-### NPM Installation (Recommended)
+### Claude Code
 
-```bash
-# Install globally via NPM
-npm install -g fastdomaincheck-mcp-server
-```
-
-### From Source
+Add the MCP server directly via npx:
 
 ```bash
-# Clone the repository
-git clone <repository-url>
-cd fastdomaincheck-mcp-server
-
-# Install dependencies
-npm install
+claude mcp add fast-domain-check -- npx -y fastdomaincheck-mcp-server@latest
 ```
 
-## Usage
-
-### As MCP Server
-
-#### With Global Installation
-
-If installed via NPM:
-
-```bash
-fastdomaincheck-mcp-server
-```
-
-#### From Source
-
-```bash
-npm start
-```
-
-Or with health check enabled:
-
-```bash
-node index.js --health-check --health-check-port 8080
-```
-
-### Integration with Claude Code
-
-Add the MCP server using Claude Code's CLI:
-
-```bash
-claude mcp add fast-domain-check fastdomaincheck-mcp-server
-```
-
-### Integration with Claude Desktop
+### Claude Desktop
 
 Add to your Claude Desktop configuration (`claude-desktop-config.json`):
 
-#### If installed globally via NPM:
 ```json
 {
   "mcpServers": {
     "fastdomaincheck": {
-      "command": "fastdomaincheck-mcp-server"
+      "command": "npx",
+      "args": ["-y", "fastdomaincheck-mcp-server@latest"]
     }
   }
 }
 ```
 
-#### If running from source:
-```json
-{
-  "mcpServers": {
-    "fastdomaincheck": {
-      "command": "node",
-      "args": ["/path/to/fastdomaincheck-mcp-server/index.js"],
-      "env": {}
-    }
-  }
-}
-```
 
 ## MCP Tool
 
@@ -158,12 +102,6 @@ Supports 200+ TLDs including:
 - New gTLDs: .app, .dev, .xyz, etc.
 - IDN TLDs: .中国, .公司, .网络, etc.
 
-## Development
-
-```bash
-# Run in development mode with auto-reload
-npm run dev
-```
 
 ## License
 
