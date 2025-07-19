@@ -2,17 +2,27 @@
   "name": "fastdomaincheck-mcp-server",
   "version": "1.0.0",
   "description": "Find Free Domains in a Breeze",
-  "main": "index.js",
   "type": "module",
+  "main": "index.js",
+  "bin": {
+    "fastdomaincheck-mcp": "index.js"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js"
+    "inspect": "npx @modelcontextprotocol/inspector node index.js"
   },
   "keywords": [
     "mcp",
+    "modelcontextprotocol",
     "domain",
     "whois",
-    "dns"
+    "dns",
+    "claude"
   ],
   "author": "Alexander Hupfer",
   "repository": {
