@@ -1,6 +1,6 @@
-# FastDomainCheck MCP Server (JavaScript)
+# FastDomainCheck MCP Server
 
-A Model Context Protocol (MCP) server for bulk domain name registration status checking, implemented in JavaScript.
+Find Free Domains in a Breeze - A Model Context Protocol (MCP) server for bulk domain name registration status checking.
 
 ## Features
 
