@@ -2,6 +2,16 @@
 
 Find Free Domains in a Breeze - A Model Context Protocol (MCP) server for bulk domain name registration status checking.
 
+## Demonstration
+
+The screenshots below show the FastDomainCheck MCP Server in action with Claude Code:
+
+### Screen 1: Domain Checking Request
+![Screen 1](screen1.png)
+
+### Screen 2: Domain Checking Results
+![Screen 2](screen2.png)
+
 ## Features
 
 - Bulk domain checking (up to 50 domains per request)
