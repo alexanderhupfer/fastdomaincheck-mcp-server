@@ -1,0 +1,34 @@
+{
+  "name": "fastdomaincheck-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for bulk domain name registration status checking",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "mcp",
+    "domain",
+    "whois",
+    "dns"
+  ],
+  "author": "Alexander Hupfer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderhupfer/fastdomaincheck-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexanderhupfer/fastdomaincheck-mcp-server/issues"
+  },
+  "homepage": "https://github.com/alexanderhupfer/fastdomaincheck-mcp-server#readme",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.0",
+    "whois": "^2.14.0",
+    "punycode": "^2.3.1",
+    "express": "^4.21.2",
+    "yargs": "^17.7.2"
+  }
+}
