@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "bin": {
-    "fastdomaincheck-mcp": "index.js"
+    "fastdomaincheck-mcp-server": "index.js"
   },
   "files": [
     "index.js",

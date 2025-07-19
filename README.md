@@ -23,6 +23,15 @@ The screenshots below show the FastDomainCheck MCP Server in action with Claude 
 
 ## Installation
 
+### NPM Installation (Recommended)
+
+```bash
+# Install globally via NPM
+npm install -g fastdomaincheck-mcp-server
+```
+
+### From Source
+
 ```bash
 # Clone the repository
 git clone <repository-url>
@@ -36,7 +45,15 @@ npm install
 
 ### As MCP Server
 
-Run the server:
+#### With Global Installation
+
+If installed via NPM:
+
+```bash
+fastdomaincheck-mcp-server
+```
+
+#### From Source
 
 ```bash
 npm start
@@ -48,10 +65,30 @@ Or with health check enabled:
 node index.js --health-check --health-check-port 8080
 ```
 
+### Integration with Claude Code
+
+Add the MCP server using Claude Code's CLI:
+
+```bash
+claude mcp add fast-domain-check fastdomaincheck-mcp-server
+```
+
 ### Integration with Claude Desktop
 
 Add to your Claude Desktop configuration (`claude-desktop-config.json`):
 
+#### If installed globally via NPM:
+```json
+{
+  "mcpServers": {
+    "fastdomaincheck": {
+      "command": "fastdomaincheck-mcp-server"
+    }
+  }
+}
+```
+
+#### If running from source:
 ```json
 {
   "mcpServers": {
