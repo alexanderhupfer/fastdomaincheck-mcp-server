@@ -1,6 +1,6 @@
 {
   "name": "fastdomaincheck-mcp-server",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Find Free Domains in a Breeze",
   "type": "module",
   "main": "index.js",
